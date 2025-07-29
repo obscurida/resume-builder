@@ -55,13 +55,13 @@ export default function MordernTemplate() {
 
           <SectionValidator value={resumeData.skills.frameworks}>
             <SkillsSection
-              title="Fortalezas"
+              title="Herramientas"
               list={resumeData.skills.frameworks.concat(resumeData.skills.libraries)}
             />
           </SectionValidator>
 
           <SectionValidator value={resumeData.skills.tools}>
-            <SkillsSection title="Herramientas" list={resumeData.skills.tools} />
+            <SkillsSection title="Fortalezas" list={resumeData.skills.tools} />
           </SectionValidator>
 
           <SectionValidator value={resumeData.education}>
@@ -69,7 +69,7 @@ export default function MordernTemplate() {
           </SectionValidator>
 
           <SectionValidator value={resumeData.volunteer}>
-            <VolunteerSection volunteer={resumeData.volunteer} />
+            <VolunteerSection title="Aficiones" volunteer={resumeData.volunteer} />
           </SectionValidator>
         </div>
       </div>
