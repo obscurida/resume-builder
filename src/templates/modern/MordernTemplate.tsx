@@ -28,48 +28,48 @@ export default function MordernTemplate() {
       <div className="flex">
         <div className="basis-[60%] p-3">
           <SectionValidator value={resumeData.basics.summary}>
-            <SummarySection summary={resumeData.basics.summary} />
+            <SummarySection title="Sobre mi" summary={resumeData.basics.summary} />
           </SectionValidator>
 
           <SectionValidator value={resumeData.work}>
-            <WorkSection experience={resumeData.work} />
+            <WorkSection title="Experiencia" experience={resumeData.work} />
           </SectionValidator>
 
           <SectionValidator value={resumeData.awards}>
-            <AwardSection awardsReceived={resumeData.awards} />
+            <AwardSection title="Certificados" awardsReceived={resumeData.awards} />
           </SectionValidator>
         </div>
 
         <div className="basis-[40%] p-3">
           <SectionValidator value={resumeData.basics.objective}>
-            <Objective objective={resumeData.basics.objective} />
+            <Objective title="Objetivos" objective={resumeData.basics.objective} />
           </SectionValidator>
 
           <SectionValidator value={resumeData.skills.languages}>
-            <SkillsSection title="Languages" list={resumeData.skills.languages} />
+            <SkillsSection title="Idiomas" list={resumeData.skills.languages} />
           </SectionValidator>
 
           <SectionValidator value={resumeData.skills.technologies}>
-            <SkillsSection title="Technologies" list={resumeData.skills.technologies} />
+            <SkillsSection title="Habilidades" list={resumeData.skills.technologies} />
           </SectionValidator>
 
           <SectionValidator value={resumeData.skills.frameworks}>
             <SkillsSection
-              title="Frameworks & Libraries"
+              title="Fortalezas personales"
               list={resumeData.skills.frameworks.concat(resumeData.skills.libraries)}
             />
           </SectionValidator>
 
           <SectionValidator value={resumeData.skills.tools}>
-            <SkillsSection title="Tools" list={resumeData.skills.tools} />
+            <SkillsSection title="Herramientas" list={resumeData.skills.tools} />
           </SectionValidator>
 
           <SectionValidator value={resumeData.education}>
-            <EducationSection education={resumeData.education} />
+            <EducationSection title="Educación" education={resumeData.education} />
           </SectionValidator>
 
           <SectionValidator value={resumeData.volunteer}>
-            <VolunteerSection volunteer={resumeData.volunteer} />
+            <VolunteerSection title="Voluntario" volunteer={resumeData.volunteer} />
           </SectionValidator>
         </div>
       </div>
