@@ -60,19 +60,19 @@ export default function ProfessionalTemplate() {
           <BasicIntro basics={resumeData.basics} />
         </Section>
         <SectionValidator value={resumeData.work}>
-          <Section title="Work Experience">
+          <Section title="Experiencia laboral">
             <Work work={resumeData.work} />
           </Section>
         </SectionValidator>
 
         <SectionValidator value={involvements}>
-          <Section title="Key Projects / Involvements">
+          <Section title="Proyectos">
             <Involvement data={involvements} />
           </Section>
         </SectionValidator>
 
         <SectionValidator value={achievements}>
-          <Section title="Certificates and Awards">
+          <Section title="Certificados">
             <Achievements data={achievements} />
           </Section>
         </SectionValidator>
@@ -86,34 +86,34 @@ export default function ProfessionalTemplate() {
         </SectionValidator>
 
         <SectionValidator value={resumeData.basics.objective}>
-          <Section title="Career Objective">
+          <Section title="Carrera professional">
             <Objective objective={resumeData.basics.objective} />
           </Section>
         </SectionValidator>
 
         <SectionValidator value={skills.languages.concat(skills.frameworks)}>
-          <Section title="Technical expertise">
+          <Section title="Experiencia técnica">
             <RatedSkills items={skills.languages.concat(skills.frameworks)} />
           </Section>
         </SectionValidator>
 
         <SectionValidator value={skills.technologies.concat(skills.libraries, skills.databases)}>
-          <Section title="Skills / Exposure">
+          <Section title="Habilidades">
             <UnratedSkills items={skills.technologies.concat(skills.libraries, skills.databases)} />
           </Section>
         </SectionValidator>
         <SectionValidator value={skills.practices}>
-          <Section title="Methodology/Approach">
+          <Section title="Enfoque profesional">
             <UnratedSkills items={skills.practices} />
           </Section>
         </SectionValidator>
         <SectionValidator value={skills.tools}>
-          <Section title="Tools">
+          <Section title="Herramientas">
             <UnratedSkills items={skills.tools} />
           </Section>
         </SectionValidator>
         <SectionValidator value={resumeData.education}>
-          <Section title="Education">
+          <Section title="Educación">
             <Education education={resumeData.education} />
           </Section>
         </SectionValidator>
