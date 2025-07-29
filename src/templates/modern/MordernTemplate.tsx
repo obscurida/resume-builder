@@ -69,10 +69,7 @@ export default function MordernTemplate() {
           </SectionValidator>
 
           <SectionValidator value={resumeData.volunteer}>
-          <div>
-          <h2>Aficiones</h2>
-          <VolunteerSection volunteer={resumeData.volunteer} />
-          </div>
+            <VolunteerSection volunteer={resumeData.volunteer} />
           </SectionValidator>
 
         </div>
