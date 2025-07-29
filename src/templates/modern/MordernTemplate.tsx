@@ -55,7 +55,7 @@ export default function MordernTemplate() {
 
           <SectionValidator value={resumeData.skills.frameworks}>
             <SkillsSection
-              title="Frameworks & Libraries"
+              title="Fortalezas"
               list={resumeData.skills.frameworks.concat(resumeData.skills.libraries)}
             />
           </SectionValidator>
